@@ -13,7 +13,7 @@ jobs:
       DOCKER_REGISTRY: ghcr.io
       DOCKER_IMAGE: mrjosh/udp2raw
       DOCKER_USERNAME: ${{ github.repository_owner }}
-      DOCKER_TOKEN: ${{ secrets.DOCKER_PASSWORD }}
+      DOCKER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DOCKER_TARGET_PLATFORM: linux/amd64,linux/arm64
     steps:
       - name: Check out the repo
